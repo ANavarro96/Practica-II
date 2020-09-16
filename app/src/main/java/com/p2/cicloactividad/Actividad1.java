@@ -22,7 +22,7 @@ public class Actividad1 extends Activity {
     private static final String CREATE_KEY = "create";
 
     // String for LogCat documentation
-    private final static String TAG = "Lab-ActivityOne";
+    private final static String TAG = "Actividad I";
     // Lifecycle counters
 
     // TODO:
@@ -37,6 +37,7 @@ public class Actividad1 extends Activity {
     // TODO: Create variables for each of the TextViews
     // named mTvCreate, mTvRestart, mTvStart, mTvResume.
     // for displaying the current count of each counter variable
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -60,6 +61,8 @@ public class Actividad1 extends Activity {
                 // Create an intent stating which Activity you would like to
                 // start
 
+
+
                 // Launch the Activity using the intent
 
             }
@@ -71,6 +74,7 @@ public class Actividad1 extends Activity {
             // TODO:
             // Restore value of counters from saved state
             // Only need 4 lines of code, one for every count variable
+
 
         }
 
@@ -96,6 +100,8 @@ public class Actividad1 extends Activity {
         // Update the appropriate count variable
         // Update the user interface
 
+
+
     }
 
     @Override
@@ -108,6 +114,7 @@ public class Actividad1 extends Activity {
         // TODO:
         // Update the appropriate count variable
         // Update the user interface
+
 
     }
 
@@ -138,6 +145,7 @@ public class Actividad1 extends Activity {
         // Update the appropriate count variable
         // Update the user interface
 
+
     }
 
     @Override
@@ -163,11 +171,11 @@ public class Actividad1 extends Activity {
     public void displayCounts() {
 
         // TODO - uncomment these lines
-	/*
+        /*
 		mTvCreate.setText("onCreate() calls: " + mCreate);
 		mTvStart.setText("onStart() calls: " + mStart);
 		mTvResume.setText("onResume() calls: " + mResume);
 		mTvRestart.setText("onRestart() calls: " + mRestart);
-	*/
+		*/
     }
 }

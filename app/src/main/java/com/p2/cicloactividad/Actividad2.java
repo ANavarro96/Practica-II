@@ -6,6 +6,7 @@ import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
+import android.widget.TextView;
 
 public class Actividad2 extends Activity {
 
@@ -16,8 +17,7 @@ public class Actividad2 extends Activity {
     private static final String CREATE_KEY = "create";
 
     // String for LogCat documentation
-    private final static String TAG = "Practica II";
-
+    private final static String TAG = "Actividad II";
     // Lifecycle counters
 
     // TODO:
@@ -36,6 +36,7 @@ public class Actividad2 extends Activity {
     // named  mTvCreate, mTvRestart, mTvStart, mTvResume.
     // for displaying the current count of each counter variable
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -46,22 +47,14 @@ public class Actividad2 extends Activity {
         // textView1 = (TextView) findViewById(R.id.textView1);
 
 
-
-
-
-
         Button closeButton = (Button) findViewById(R.id.bClose);
         closeButton.setOnClickListener(new OnClickListener() {
 
             @Override
             public void onClick(View v) {
-
                 // TODO:
                 // This function closes Activity Two
                 // Hint: use Context's finish() method
-
-
-
             }
         });
 
@@ -73,10 +66,6 @@ public class Actividad2 extends Activity {
             // Only need 4 lines of code, one for every count variable
 
 
-
-
-
-
         }
 
         // Emit LogCat message
@@ -85,8 +74,6 @@ public class Actividad2 extends Activity {
         // TODO:
         // Update the appropriate count variable
         // Update the user interface via the displayCounts() method
-
-
 
 
     }
@@ -103,10 +90,6 @@ public class Actividad2 extends Activity {
         // TODO:
         // Update the appropriate count variable
         // Update the user interface
-
-
-
-
     }
 
     @Override
@@ -119,8 +102,6 @@ public class Actividad2 extends Activity {
         // TODO:
         // Update the appropriate count variable
         // Update the user interface
-
-
 
     }
 
@@ -151,9 +132,6 @@ public class Actividad2 extends Activity {
         // Update the appropriate count variable
         // Update the user interface
 
-
-
-
     }
 
     @Override
@@ -171,12 +149,6 @@ public class Actividad2 extends Activity {
         // Save counter state information with a collection of key-value pairs
         // 4 lines of code, one for every count variable
 
-
-
-
-
-
-
     }
 
     // Updates the displayed counters
@@ -186,12 +158,12 @@ public class Actividad2 extends Activity {
     public void displayCounts() {
 
         // TODO - uncomment these lines
-	/*
+    /*
 		mTvCreate.setText("onCreate() calls: " + mCreate);
 		mTvStart.setText("onStart() calls: " + mStart);
 		mTvResume.setText("onResume() calls: " + mResume);
 		mTvRestart.setText("onRestart() calls: " + mRestart);
-	*/
+    */
 
     }
 }
