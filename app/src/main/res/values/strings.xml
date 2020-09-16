@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">CicloActividad</string>
+    <string name="onCreate">Veces llamado a onCreate(): 0</string>
+    <string name="onStart">Veces llamado a onStart(): 0</string>
+    <string name="onResume">Veces llamado a onResume(): 0</string>
+    <string name="onRestart">Veces llamado a onRestart(): 0</string>
+    <string name="button">Empezar la actividad 2</string>
+    <string name="title_activity_activity_two">Actividad 2</string>
+    <string name="close">Finalizar actividad</string>
+
+</resources>
