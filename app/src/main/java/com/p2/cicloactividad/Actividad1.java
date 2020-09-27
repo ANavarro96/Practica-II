@@ -15,28 +15,25 @@ import android.widget.Button;
 import android.widget.TextView;
 
 public class Actividad1 extends Activity {
-    // Use these as keys when you're saving state between reconfigurations
+    // Utiliza estas variables para guardar los datos
     private static final String RESTART_KEY = "restart";
     private static final String RESUME_KEY = "resume";
     private static final String START_KEY = "start";
     private static final String CREATE_KEY = "create";
 
-    // String for LogCat documentation
+    // String para el Log 
     private final static String TAG = "Actividad I";
     // Lifecycle counters
 
     // TODO:
-    // Create variables named
-    // mCreate, mRestart, mStart and mResume
-    // to count calls to onCreate(), onRestart(), onStart() and
-    // onResume(). These variables should not be defined as static.
+    // Crea 4 variables que hagan de contador para contar las llamadas que se hacen en cada función
+    // onCreate(), onRestart(), onStart() and
+    // onResume().
 
-    // You will need to increment these variables' values when their
-    // corresponding lifecycle methods get called.
+    // Tendréis que aumentar el contador cuando
+    // se hagan llamadas a las funciones del ciclo de la actividad
 
-    // TODO: Create variables for each of the TextViews
-    // named mTvCreate, mTvRestart, mTvStart, mTvResume.
-    // for displaying the current count of each counter variable
+    // TODO: Crea variables para los TextView que mostrarán el valor de cada contador
 
 
     @Override
@@ -44,9 +41,9 @@ public class Actividad1 extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.actividad1_layout);
 
-        // TODO: Assign the appropriate TextViews to the TextView variables
-        // Hint: Access the TextView by calling Activity's findViewById()
-        // textView1 = findViewById(R.id.textView1);
+        // TODO: Asigna las instancias de los TextViews a sus variables
+        // PISTA: Para acceder a un objeto en la interfaz, hay que utilizar findViewById()
+        // Ejemplo: miTextView = findViewById(R.id.miTextView);
 
 
         Button launchActivityTwoButton = (Button) findViewById(R.id.bLaunchActivityTwo);
@@ -55,25 +52,22 @@ public class Actividad1 extends Activity {
             @Override
             public void onClick(View v) {
                 // TODO:
-                // Launch Activity Two
-                // Hint: use Context's startActivity() method
+                // Lanza la Actividad2
 
-                // Create an intent stating which Activity you would like to
-                // start
+                // Crea un intent especificando la actividad que quieres inicializar
 
 
 
-                // Launch the Activity using the intent
+                // Lanza la actividad usando el Intent
 
             }
         });
 
-        // Has previous state been saved?
+        // Hemos guardado los valores previos
         if (savedInstanceState != null) {
 
             // TODO:
-            // Restore value of counters from saved state
-            // Only need 4 lines of code, one for every count variable
+            // Restaura el valor de los contadores desde el Bundle savedInstanceState
 
 
         }
@@ -82,8 +76,8 @@ public class Actividad1 extends Activity {
         Log.i(TAG, "Entered the onCreate() method");
 
         // TODO:
-        // Update the appropriate count variable
-        // Update the user interface via the displayCounts() method
+        // Actualiza el contador de la variable asociada al método
+        // Actualiza la interfaz llamando a la función displayCounts()
 
     }
 
@@ -97,8 +91,8 @@ public class Actividad1 extends Activity {
         Log.i(TAG, "Entered the onStart() method");
 
         // TODO:
-        // Update the appropriate count variable
-        // Update the user interface
+        // Actualiza el contador de la variable asociada al método
+        // Actualiza la interfaz llamando a la función displayCounts()
 
 
 
@@ -112,8 +106,8 @@ public class Actividad1 extends Activity {
         Log.i(TAG, "Entered the onResume() method");
 
         // TODO:
-        // Update the appropriate count variable
-        // Update the user interface
+        // Actualiza el contador de la variable asociada al método
+        // Actualiza la interfaz llamando a la función displayCounts()
 
 
     }
@@ -142,8 +136,8 @@ public class Actividad1 extends Activity {
         Log.i(TAG, "Entered the onRestart() method");
 
         // TODO:
-        // Update the appropriate count variable
-        // Update the user interface
+        // Actualiza el contador de la variable asociada al método
+        // Actualiza la interfaz llamando a la función displayCounts()
 
 
     }
@@ -159,18 +153,13 @@ public class Actividad1 extends Activity {
     @Override
     public void onSaveInstanceState(Bundle savedInstanceState) {
         // TODO:
-        // Save state information with a collection of key-value pairs
-        // 4 lines of code, one for every count variable
+        // Guarda la información de las variables de contador en el Bundle savedInstanceState
 
     }
 
-    // Updates the displayed counters
-    // This method expects that the counters and TextView variables use the
-    // names
-    // specified above
     public void displayCounts() {
 
-        // TODO - uncomment these lines
+        // TODO - descomenta estas lineas
         /*
 		mTvCreate.setText("onCreate() calls: " + mCreate);
 		mTvStart.setText("onStart() calls: " + mStart);
